@@ -1,4 +1,4 @@
-# 🎵 kexiYTdownloader Pro
+# 🎵 kexisdownloader Pro
 
 A personal YouTube video/audio downloader built for musicians who need high-quality downloads. 
 
@@ -32,8 +32,8 @@ Click the green **"Code"** button at the top of this page, then click **"Downloa
 
 Or if you have git installed:
 ```bash
-git clone https://github.com/keximaze/kexiYTdownloaderPro. git
-cd kexiYTdownloaderPro
+git clone https://github.com/keximaze/kexisdownloaderPro. git
+cd kexisdownloaderPro
 ```
 
 **Step 2: Install dependencies**
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 **Step 3: Run the app**
 ```bash
-python kexidownloader.py
+python kexisdownloader.py
 ```
 
 ## 📖 How to Use
@@ -113,7 +113,7 @@ python --version
 
 If it shows Python 2.x, try:
 ```bash
-python3 kexidownloader.py
+python3 kexisdownloader.py
 ```
 
 ### Downloads fail
