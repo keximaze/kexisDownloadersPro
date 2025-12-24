@@ -1,4 +1,4 @@
-# 🏗️ Building kexiYTdownloader Pro
+# 🏗️ Building kexisdownloader Pro
 
 This guide helps you create a **standalone executable** that your friends can run **without installing Python**. 
 
@@ -30,7 +30,7 @@ This creates a `.app` file that looks and acts like a native Mac application.
 
 ### **Build Command:**
 ```bash
-pyinstaller --name="kexiYTdownloader" \
+pyinstaller --name="kexisdownloader" \
     --windowed \
     --onefile \
     --add-binary="$(which yt-dlp):." \
@@ -38,7 +38,7 @@ pyinstaller --name="kexiYTdownloader" \
 ```
 
 ### **What each flag means:**
-- `--name="kexiYTdownloader"`: Names your app
+- `--name="kexisdownloader"`: Names your app
 - `--windowed`: Hides the terminal window (GUI only)
 - `--onefile`: Creates a single app bundle
 - `--add-binary="$(which yt-dlp):."`: Includes yt-dlp
@@ -46,11 +46,11 @@ pyinstaller --name="kexiYTdownloader" \
 ### **Find Your App:**
 After building (takes 5-10 minutes), your app is in: 
 ```
-dist/kexiYTdownloader. app
+dist/kexisdownloader. app
 ```
 
 ### **Test It:**
-Double-click `kexiYTdownloader.app` to make sure it works!
+Double-click `kexisdownloader.app` to make sure it works!
 
 ### **Share It:**
 1. Right-click `dist` folder → Compress
@@ -66,20 +66,20 @@ Creates a `.exe` file for Windows users.
 
 ### **Build Command:**
 ```cmd
-pyinstaller --name="kexiYTdownloader" ^
+pyinstaller --name="kexisdownloader" ^
     --windowed ^
     --onefile ^
     --add-binary="yt-dlp.exe;." ^
-    kexidownloader.py
+    kexisdownloader.py
 ```
 
 ### **Find Your Executable:**
 ```
-dist\kexiYTdownloader.exe
+dist\kexisdownloader.exe
 ```
 
 ### **Test It:**
-Double-click `kexiYTdownloader.exe`
+Double-click `kexisdownloader.exe`
 
 ### **Share It:**
 1. Zip the `dist` folder
@@ -97,28 +97,28 @@ Creates a standalone Linux executable.
 
 ### **Build Command:**
 ```bash
-pyinstaller --name="kexiYTdownloader" \
+pyinstaller --name="kexisdownloader" \
     --onefile \
     --add-binary="$(which yt-dlp):." \
-    kexidownloader.py
+    kexisdownloader.py
 ```
 
 ### **Find Your Binary:**
 ```
-dist/kexiYTdownloader
+dist/kexisdownloader
 ```
 
 ### **Test It:**
 ```bash
-./dist/kexiYTdownloader
+./dist/kexisdownloader
 ```
 
 ### **Share It:**
 1. Zip the `dist` folder
 2. Friends extract and run: 
 ```bash
-chmod +x kexiYTdownloader
-./kexiYTdownloader
+chmod +x kexisdownloader
+./kexisdownloader
 ```
 
 ---
@@ -128,14 +128,14 @@ chmod +x kexiYTdownloader
 This is the BEST way to share with friends!
 
 ### **Steps:**
-1. Go to: **https://github.com/keximaze/kexiYTdownloaderPro**
+1. Go to: **https://github.com/keximaze/kexisdownloaderPro**
 2. Click **"Releases"** (right sidebar)
 3. Click **"Create a new release"**
 4. Tag version: `v1.0.0`
-5. Release title: `kexiYTdownloader Pro v1.0.0`
+5. Release title: `kexisdownloader Pro v1.0.0`
 6. Description: 
 ```
-🎵 First release of kexiYTdownloader Pro! 
+🎵 First release of kexisdownloader Pro! 
 
 Features:
 - Video downloads (8K to 720p)
@@ -146,9 +146,9 @@ Features:
 Download the version for your operating system below! 
 ```
 7. **Drag and drop** your built apps: 
-   - Mac: `kexiYTdownloader.app. zip`
-   - Windows: `kexiYTdownloader. exe.zip`
-   - Linux: `kexiYTdownloader-linux. zip`
+   - Mac: `kexisdownloader.app. zip`
+   - Windows: `kexisdownloader. exe.zip`
+   - Linux: `kexisdownloader-linux. zip`
 8. Click **"Publish release"**
 9. Share the release URL with friends!
 
@@ -178,15 +178,15 @@ Then rebuild.
 **Solution:** Run from terminal to see errors:
 ```bash
 # Mac/Linux
-./dist/kexiYTdownloader. app/Contents/MacOS/kexiYTdownloader
+./dist/kexisdownloader. app/Contents/MacOS/kexisdownloader
 
 # Windows
-dist\kexiYTdownloader.exe
+dist\kexisdownloader.exe
 ```
 
 Common fixes:
 ```bash
-pyinstaller --name="kexiYTdownloader" \
+pyinstaller --name="kexisdownloader" \
     --windowed \
     --onefile \
     --hidden-import=yt_dlp \
