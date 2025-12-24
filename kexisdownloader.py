@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 
 """
-kexiYT Downloader Pro v2.0 - macOS Native Design
+kexi's Downloader Pro v2.0 - macOS Native Design
 
 A beautiful, full-featured YouTube downloader with native macOS design. 
 All original features preserved + enhanced UX. 
 """
 
-__title__ = "kexiYT Downloader Pro"
+__title__ = "kexi's Downloader Pro"
 __version__ = "2.0.0"
 __author__ = "mark keximaze"
 __license__ = "MIT"
@@ -305,14 +305,14 @@ class DownloadWorker(threading.Thread):
 # ----------------------------------------------------------------------
 # Main Application
 # ----------------------------------------------------------------------
-class KexiYTDownloader(ctk.CTk):
+class kexisdownloader(ctk.CTk):
     """Main application with beautiful macOS design."""
 
     def __init__(self):
         super().__init__()
 
         # Window setup
-        self.title("⚡ kexiYT Downloader Pro")
+        self.title("⚡ kexi's Downloader Pro")
         self.geometry("1100x800")
         self.minsize(900, 700)
 
@@ -340,7 +340,7 @@ class KexiYTDownloader(ctk.CTk):
         self.bind("<Command-comma>", lambda e: self._show_preferences())
         self.bind("<Command-q>", lambda e: self. quit())
 
-        print("✅ kexiYT Downloader Pro v2.0 initialized")
+        print("✅ kexi's Downloader Pro v2.0 initialized")
 
     # ------------------------------------------------------------------
     def _setup_menu(self):
@@ -375,7 +375,7 @@ class KexiYTDownloader(ctk.CTk):
         # Help menu
         help_menu = tk.Menu(menubar, tearoff=0)
         menubar.add_cascade(label="Help", menu=help_menu)
-        help_menu.add_command(label="About kexiYT Downloader", command=self._show_about)
+        help_menu.add_command(label="About kexi's Downloader", command=self._show_about)
 
         # Bind menu shortcuts
         self.bind("<Command-o>", lambda e: self._open_downloads_folder())
@@ -389,7 +389,7 @@ class KexiYTDownloader(ctk.CTk):
 
         title_label = ctk. CTkLabel(
             header,
-            text="⚡ kexiYT Downloader Pro",
+            text="⚡ kexi's Downloader Pro",
             font=ctk.CTkFont(size=28, weight="bold")
         )
         title_label.pack(side="left")
@@ -954,7 +954,7 @@ class KexiYTDownloader(ctk.CTk):
     def _show_about(self):
         """Show about dialog."""
         messagebox.showinfo(
-            "About kexiYT Downloader Pro",
+            "About kexi's Downloader Pro",
             f"{__title__} v{__version__}\n\n"
             f"A beautiful, full-featured YouTube downloader\n"
             f"with native macOS design.\n\n"
@@ -972,7 +972,7 @@ class FormatCheckerWindow(ctk.CTkToplevel):
     def __init__(self, parent, default_url=""):
         super().__init__(parent)
 
-        self.title("🔍 Format Checker - kexiYT Downloader Pro")
+        self.title("🔍 Format Checker - kexi's Downloader Pro")
         self.geometry("1100x750")
         self.minsize(900, 600)
 
@@ -1301,5 +1301,5 @@ class PreferencesWindow(ctk.CTkToplevel):
 # Run the app
 # ----------------------------------------------------------------------
 if __name__ == "__main__":
-    app = KexiYTDownloader()
+    app = kexisdownloader()
     app.mainloop()
